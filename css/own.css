@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Barbie';
+  src: url('../fonts/Pacifico-Regular.ttf') format('truetype');
+}
+
+.barbie-font{
+  font-family: 'Barbie', sans-serif !important;
+}
+
+header.masthead {
+  height: 100vh;
+}
+
+.pinkTextColor {
+  color: #ed419a;
+}
+
+.pinkBtnColor {
+  color: white;
+  background-color: #ed419a;
+}
+
+.pinkBtnColor:hover {
+  color: white;
+  background-color: #d63b8b;
+}
+
+.pinkBtnColor:active {
+  color: white !important;
+  background-color: #ed419a !important;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.required-star::before {
+  content: "*";
+  color: red;
+}
+
+.table thead{
+  background-color: #f554a7 !important;
+}
+
+.projects-section {
+  padding: 1rem 0;
+}
+
+.dataTables_length, .dataTables_filter{
+  margin-bottom: 20px;
+}
+
+header.masthead .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.masthead .masthead-heading {
+  font-size: 4rem;
+  line-height: 3.5rem;
+}
+
+.masthead .masthead-subheading {
+  margin-top: 2rem;
+  font-size: 1.9rem;
+}
+
+.masthead .masthead-sub-subheading {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+
+.bg-barbie {
+  opacity: 1;
+  background-color: #ff559a !important;
+}
+
+.button-barbie {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-barbie:hover {
+  background-color: #d81b60;
+}
+
+header.masthead .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-border {
+  border: 2px solid red !important;
+}
+
+#error-list {
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="images/Barbie_Logo.png" />
+    <title>Barbie World</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet"href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css"/>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/own.css" rel="stylesheet" />
+    <link href="css/button.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" ></script>
+  </head>
+  <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
+      <a class="ps-3 me-2" href="">
+        <img class="img-fluid" style="height: 45px" src="images/Barbie_Logo.png" />
+      </a>
+      <button class="btn btn-link btn-lg order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!" >
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div id="layoutSidenav">
+      <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion" >
+          <div class="sb-sidenav-menu">
+            <div class="nav">
+              <div class="sb-sidenav-menu-heading"></div>
+              <a class="nav-link active" href="index.html">
+                <div class="sb-nav-link-icon">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                Főoldal
+              </a>
+
+              <div class="sb-sidenav-menu-heading">Admin</div>
+              <a class="nav-link collapsed"href="#"data-bs-toggle="collapse"data-bs-target="#collapseLayouts"aria-expanded="false"aria-controls="collapseLayouts">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-columns"></i>
+                </div>
+                Termékek
+                <div class="sb-sidenav-collapse-arrow">
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </a>
+              <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                  <a class="nav-link" href="products.html">Összes</a>
+                  <a class="nav-link" href="dresses.html">Ruha</a>
+                  <a class="nav-link" href="shoes.html">Cipők</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="layoutSidenav_content">
+        <main>
+          <header class="masthead bg-barbie text-white text-center">
+            <div class="container">
+              <img src="images/barbie-world.gif" style="width: 600px; width: 600px;">
+              <p class="masthead-subheading font-weight-light mb-0">Üdvözöljük a Csábító Barbie Divatvilágban - Ruhák és Cipők Webáruháza!</p>
+              <p class="masthead-sub-subheading font-weight-light mb-0" >Lépjen be az elképesztő Barbie divatuniverzumba, ahol nemcsak a ruhák, hanem a lábbelik is varázslatosan egyedivé teszik megjelenését! Fedezze fel exkluzív kollekcióinkat, melyek kizárólag Önnek, a stílus és elegancia rajongójának készültek.</p>
+              <a class="mt-5" href="contact.html">
+                <button id="shiny">Kapcsolat
+                  <div class="star-1">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                  </div>
+                  <div class="star-2">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                  </div>
+                  <div class="star-3">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                  </div>
+                  <div class="star-4">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                  </div>
+                  <div class="star-5">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                  </div>
+                  <div class="star-6">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </header>
+          <div class="container-fluid mt-4 px-2">
+            <section class="projects-section" id="projects">
+              <div class="container px-4">
+                  <div class="row gx-0 mb-4 align-items-center">
+                      <div class="col-7">
+                          <div class="text-center">
+                            <h2 class="pinkTextColor barbie-font">Csillogó Ruhatrendek</h2>
+                            <p class="text-black-50 mb-0 pinkTextColor">Fedezd fel a Csábító Barbie Ruha Webáruház különleges kollekcióit, ahol divatos és egyedi ruhák találkoznak. Legyen szó elegáns estélyiről vagy laza hétköznapi stílusról, minden ruhadarabunk egyedülálló történetet mesél, hogy minden pillanatban kimagaslóan csillogj!</p>
+                          </div>
+                      </div>
+                      <div class="col-4">
+                        <img class="img-fluid mb-3 " src="images/dress.jpg" alt="...">
+                      </div>
+                  </div>
+              </div>
+            </section>
+            <section class="projects-section" id="projects">
+              <div class="container px-4">
+                  <div class="row gx-0 mb-4 align-items-center">
+                      <div class="col-4">
+                        <img class="img-fluid mb-3 " src="images/heels.jpg" alt="...">
+                      </div>
+                      <div class="col-7">
+                          <div class="text-center">
+                            <h2 class="pinkTextColor barbie-font">Különleges Barbie Cipő Kollekciók</h2>
+                            <p class="text-black-50 mb-0 pinkTextColor">Nézze meg különleges Barbie cipő kollekcióinkat, melyek a lábbelik terén is új mércét állítanak. Csillogó magassarkúktól kényelmes sportcipőkig minden igényt kielégítünk, hogy Ön mindig stílusosan léphessen előre.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section class="projects-section" id="projects">
+            <div class="container px-4">
+                <div class="row gx-0 mb-4 align-items-center">
+                    <div class="col-7">
+                        <div class="text-center">
+                          <h2 class="pinkTextColor barbie-font">Kényelem és Stílus Egyszerre</h2>
+                          <p class="text-black-50 mb-0 pinkTextColor">Az általunk kínált ruhák és cipők nem csak divatosak, hanem kiváló minőségű anyagokból készülnek, biztosítva a kényelmet és a tartósságot. Hisszük, hogy a stílus és a kényelem egyaránt fontos, és minden termékünk ezt tükrözi.</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                      <img class="img-fluid mb-3 " src="images/sport.jpg" alt="...">
+                    </div>
+                </div>
+            </div>
+          </section>
+        </div>
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+          <div class="container-fluid px-4">
+            <div class="d-flex align-items-center justify-content-between small">
+              <div class="text-muted">Copyright &copy; Barbie World 2023</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
